@@ -1,5 +1,5 @@
 import requests
-import telegram
+from telegram import Bot
 import time
 
 # Replace YOUR_TELEGRAM_BOT_TOKEN with your actual Telegram bot token
