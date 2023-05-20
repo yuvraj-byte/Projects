@@ -17,6 +17,7 @@ while True:
     data = requests.get(url).json()
 
     price=data['price']
+    print(price)
     def send_msg(text):
         if float(price)<0.29 or float(price)>0.3010:
             url_req="https://api.telegram.org/bot6056102103:AAFKdFbKN_k4-f2yCQWrW0GMzJBtnH7Bw0s/sendMessage?chat_id=@crupdat&text="+"CFX PRICE = "+text
